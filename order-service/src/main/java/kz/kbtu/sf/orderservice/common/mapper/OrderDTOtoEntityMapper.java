@@ -6,15 +6,16 @@ import kz.kbtu.sf.orderservice.entity.Order;
 import org.springframework.stereotype.Component;
 
 import java.util.Date;
+import java.util.UUID;
 
 @Component
 public class OrderDTOtoEntityMapper {
 
 
-    public Order map(OrderRequestDTO orderRequestDTO) {
+    public Order map(OrderRequestDTO orderRequestDTO, UUID customerId) {
         return
                 Order.builder()
-//                        .customerId(Alikhan's get token)
+                        .customerId(customerId)
                         .productId(orderRequestDTO.getProductId())
                         .name(orderRequestDTO.getName())
                         .productType(orderRequestDTO.getProductType())

@@ -12,6 +12,8 @@ import kz.kbtu.sf.orderservice.repository.OutboxRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.UUID;
+
 @Service
 public class OrderService {
 
@@ -29,9 +31,9 @@ public class OrderService {
 
 
     @Transactional
-    public Order createOrder(OrderRequestDTO orderRequestDTO) {
+    public Order createOrder(OrderRequestDTO orderRequestDTO, UUID customerId) {
 
-        Order order = orderDTOtoEntityMapper.map(orderRequestDTO);
+        Order order = orderDTOtoEntityMapper.map(orderRequestDTO, customerId);
         order = orderRepository.save(order);
 
         Outbox outbox = orderEntityToOutboxEntityMapper.map(order);
