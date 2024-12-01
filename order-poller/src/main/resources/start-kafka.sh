@@ -1,0 +1,1 @@
+sh C:/kafka/kafka_2.12-3.8.0/bin/kafka-server-start.sh C:/kafka/kafka_2.12-3.8.0/config/server.properties
