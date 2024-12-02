@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
+import java.util.*;
 
 @Table(name = "outbox")
 @Entity
@@ -15,7 +15,7 @@ import java.util.Date;
 public class Outbox {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private Long UUID;
+    private UUID Id;
     private UUID OrderId;
     private String payload;
     private Date createdAt;
