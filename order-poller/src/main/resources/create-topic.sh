@@ -1,1 +1,1 @@
-sh C:/kafka/kafka_2.12-3.8.0/bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic NewTopic --partitions 3 --replication-factor 1
+sh C:/kafka/kafka_2.12-3.8.0/bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic unprocessed-order-events --partitions 3 --replication-factor 1

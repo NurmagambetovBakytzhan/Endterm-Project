@@ -77,6 +77,8 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+					<mainClass>kz.kbtu.sf.orderpoller.OrderPollerApplication</mainClass>
+
 				</configuration>
 			</plugin>
 		</plugins>

@@ -1,10 +1,21 @@
-FROM eclipse-temurin
+FROM maven:3.9.8-eclipse-temurin-21 AS build
 
+WORKDIR /app
 
-ARG JAR_FILE=target/*.jar
+COPY pom.xml .
 
-COPY ${JAR_FILE} app.jar
+RUN mvn clean install -DskipTests
 
-EXPOSE 9191
+COPY src ./src
 
-ENTRYPOINT ["java", "-jar", "app.jar"]
+RUN mvn package -DskipTests
+
+FROM bellsoft/liberica-openjdk-debian:21 AS runtime
+
+WORKDIR /app
+
+COPY --from=build /app/target/*.jar /app/app.jar
+
+EXPOSE 9292
+
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]

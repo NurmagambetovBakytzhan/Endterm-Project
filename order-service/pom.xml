@@ -149,6 +149,7 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
+                    <mainClass>kz.kbtu.sf.orderservice.OrderServiceApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
