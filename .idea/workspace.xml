@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6224652-91aa-4948-b6b3-f5b91784688b" name="Changes" comment="Docker">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-poller/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/order-poller/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-poller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-poller/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-poller/src/main/java/kz/kbtu/sf/orderpoller/service/OrderPollerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-poller/src/main/java/kz/kbtu/sf/orderpoller/service/OrderPollerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-poller/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-poller/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-poller/src/main/resources/create-topic.sh" beforeDir="false" afterPath="$PROJECT_DIR$/order-poller/src/main/resources/create-topic.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-poller/src/test/java/kz/kbtu/sf/orderpoller/OrderPollerApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-poller/src/test/java/kz/kbtu/sf/orderpoller/OrderPollerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +25,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/NurmagambetovBakytzhan/Endterm-Project.git&quot;,
-    &quot;accountId&quot;: &quot;d7e4ffb9-01f2-4a2e-80cd-4f9f098f47e9&quot;
+    &quot;accountId&quot;: &quot;3fa5fa97-320b-424a-b795-d5abead5db94&quot;
   }
 }</component>
   <component name="MavenImportPreferences">
@@ -59,9 +50,10 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;docker&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/bakytzhan/sf/endterm-project&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/fall_2024/Endterm-Project&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -91,8 +83,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.21565.193" />
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-IU-243.21565.193" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
       </set>
     </attachedChunks>
   </component>
@@ -111,6 +103,9 @@
       <workItem from="1733057148561" duration="10000" />
       <workItem from="1733065129539" duration="842000" />
       <workItem from="1733115927460" duration="942000" />
+      <workItem from="1733334694250" duration="18000" />
+      <workItem from="1733334742717" duration="47000" />
+      <workItem from="1733334794150" duration="23000" />
     </task>
     <task id="LOCAL-00001" summary="Docker">
       <option name="closed" value="true" />
