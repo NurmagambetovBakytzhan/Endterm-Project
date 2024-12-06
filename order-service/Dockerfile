@@ -8,7 +8,7 @@ RUN mvn clean install -DskipTests
 
 COPY src ./src
 
-RUN mvn package -DskipTests
+RUN mvn package
 
 FROM bellsoft/liberica-openjdk-debian:21 AS runtime
 

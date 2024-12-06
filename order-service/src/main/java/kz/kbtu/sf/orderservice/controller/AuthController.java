@@ -44,6 +44,9 @@ public class AuthController {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private RoleRepository roleRepository;
+
     /**
      * Register a new user
      */
@@ -56,9 +59,14 @@ public class AuthController {
             return ResponseEntity.badRequest().body("Email is already in use.");
         }
 
+        Role defaultRole = roleRepository.findByName("ROLE_ADMIN")
+               .orElseThrow(() -> new IllegalArgumentException("Default role not found."));
+
         User newUser = new User();
         newUser.setEmail(registerRequest.getEmail());
         newUser.setPassword(passwordEncoder.encode(registerRequest.getPassword()));
+        newUser.addRole(defaultRole);
+
 
         userRepository.save(newUser);
         return ResponseEntity.ok("User registered successfully.");
