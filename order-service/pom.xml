@@ -53,6 +53,12 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>io.gatling.highcharts</groupId>
+            <artifactId>gatling-charts-highcharts</artifactId>
+            <version>3.9.5</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>com.github.javafaker</groupId>
             <artifactId>javafaker</artifactId>
             <version>1.0.2</version>
@@ -186,7 +192,7 @@
                 <artifactId>gatling-maven-plugin</artifactId>
                 <version>4.2.9</version>
                 <configuration>
-                    <simulationClass>kz.kbtu.sf.orderservice.AccountSimulation</simulationClass>
+                    <simulationClass>kz.kbtu.sf.orderservice.OrderServiceSimulation</simulationClass>
                 </configuration>
             </plugin>
             <plugin>
